@@ -158,12 +158,12 @@
   </br>
   
   <!-- Text input-->
-  <div class="form-group">
+  <div class="form-group" >
     <label class="col-md-4 control-label">First Name</label>  
     <div class="col-md-4">
       <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-        <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+        <input  name="first_name" placeholder="First Name" class="form-control"  type="text" required="required">
       </div>
     </div>
   </div>
@@ -173,7 +173,7 @@
       <div class="col-md-4">
         <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-          <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+          <input name="last_name" placeholder="Last Name" class="form-control"  type="text" required="required">
         </div>
       </div>  
   </div>
@@ -183,7 +183,7 @@
       <div class="col-md-4">
       <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-        <input name="email" placeholder="Email Address" class="form-control"  type="text">
+        <input name="email" placeholder="Email Address" class="form-control"  type="text" required="required">
         </div>
       </div>
   </div>
@@ -193,7 +193,7 @@
     <div class="col-md-4">
       <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-        <input class="form-control" type="date" value="1999-12-31" id="example-date-input">
+        <input class="form-control" type="date" value="1999-12-31" id="example-date-input" required="required">
       </div>
     </div>
   </div>
@@ -203,7 +203,7 @@
       <div class="col-md-4">
       <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
-    <input name="phone" placeholder="123-456-7890" class="form-control" type="text">
+    <input name="phone" placeholder="123-456-7890" class="form-control" type="text" required="required">
       </div>
     </div>
   </div>
@@ -213,7 +213,7 @@
       <div class="col-md-4">
       <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-    <input name="address" placeholder="1 Example Street" class="form-control" type="text">
+    <input name="address" placeholder="1 Example Street" class="form-control" type="text" required="required">
       </div>
     </div>
   </div>
@@ -223,7 +223,7 @@
       <div class="col-md-4">
       <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
-    <input name="city" placeholder="City" class="form-control"  type="text">
+    <input name="city" placeholder="City" class="form-control"  type="text" required="required">
       </div>
     </div>
   </div>
@@ -235,7 +235,7 @@
       <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
       <select name="state" class="form-control selectpicker" >
-        <option value=" " >Please select your state</option>
+        <option value=" " >Please select your state (If in the United States)</option>
         <option>Alabama</option>
         <option>Alaska</option>
         <option >Arizona</option>
@@ -293,6 +293,16 @@
   </div>
   
   <div class="form-group">
+    <label class="col-md-4 control-label">Country</label>  
+      <div class="col-md-4">
+      <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+    <input name="country" placeholder="Country" class="form-control"  type="text" required="required">
+      </div>
+  </div>
+  </div>
+
+  <div class="form-group">
     <label class="col-md-4 control-label">Zip Code</label>  
       <div class="col-md-4">
       <div class="input-group">
@@ -302,7 +312,6 @@
   </div>
   </div>
   
-  <!-- radio checks -->
    <div class="form-group">
                           <label class="col-md-4 control-label">Criminal Record</label>
                           <div class="col-md-4">
@@ -322,10 +331,8 @@
   
   
   
-  <!-- Success message -->
   <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you as soon as possible.</div>
   
-  <!-- Button -->
   <div class="form-group">
     <label class="col-md-4 control-label"></label>
     <div class="col-md-4">
